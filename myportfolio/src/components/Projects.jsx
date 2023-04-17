@@ -21,7 +21,7 @@ export const Projects = () => {
     ]
 
 return(
-    <div className="h-screen bg-gradient-to-b from-zinc-700 to-gray-800 text-white md:h-screen">
+    <div name="projects"  className="h-screen bg-gradient-to-b from-zinc-700 to-gray-800 text-white md:h-screen">
         <div>
             <div className="pb-12 text-center">
                 <h3 className="text-4xl font-bold mb-4 ">Here are some of my school projects</h3>
