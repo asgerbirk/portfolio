@@ -6,6 +6,7 @@ import react from "../assets/react.png"
 import Spring from "../assets/Spring.png"
 import sql from "../assets/sql.png"
 import tailwind from "../assets/tailwind.png"
+import svelte from "../assets/svelte.png"
 export const Competences = () => {
 
     const competences = [
@@ -48,6 +49,11 @@ export const Competences = () => {
             id: 8,
             src: sql,
             title: "MySQL"
+        },
+        {
+            id: 9,
+            src: svelte,
+            title: "Svelte"
         },
 
     ]
