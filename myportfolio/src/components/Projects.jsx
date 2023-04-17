@@ -7,15 +7,18 @@ export const Projects = () => {
     const projects = [
         {
             id: 1,
-            src: exam
+            src: exam,
+            link: "https://github.com/asgerbirk/examfrontend"
         },
         {
             id: 2,
-            src: mandatory
+            src: mandatory,
+            link: "https://github.com/asgerbirk/expressExercise/tree/master/mandatory_01"
         },
         {
             id: 3,
-            src: app
+            src: app,
+            link: "https://github.com/asgerbirk/mandatoryMobile"
         }
 
     ]
@@ -28,7 +31,7 @@ return(
             </div>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
 
-            {projects.map(({id, src}) => (
+            {projects.map(({id, src, link}) => (
                     <div key={id} className="bg-gray-900 rounded-lg overflow-hidden">
                         <img src={src} alt="exam" className="w-full h-full max-h-64 object-cover object-center aspect-w-1 aspect-h-1"/>
                         <div className="p-4">
@@ -37,8 +40,7 @@ return(
                                 varius mollis nunc, a tincidunt dolor eleifend vitae. Vestibulum quis ultrices tellus.
                                 Proin nec dapibus lectus.</p>
                             <div className="mt-4">
-                                <a href="#"
-                                   className="inline-block bg-zinc-500 hover:bg-zinc-600 text-white px-4 py-2 rounded">Code</a>
+                                <a href={link} className="inline-block bg-zinc-500 hover:bg-zinc-600 text-white px-4 py-2 rounded">Code</a>
                             </div>
                         </div>
                     </div>
