@@ -27,6 +27,13 @@ export const Projects = () => {
             link: "https://github.com/asgerbirk/mandatoryMobile",
             title: "Wine App",
             description: "This is a simple CRUD Wine App where you can see the all the wines and all the recent wines in 7 days. I have used React-Native and Firestore Database"
+        },
+        {
+            id: 4,
+            src: "",
+            link: "https://github.com/asgerbirk/fullstack/tree/master/server",
+            title: "Login - UNDER DEVELOPMENT",
+            description: "Fullstack application with a authentication(bcrypt), authorization(JWT). It is an exam project that i am working on, so it is not done yet."
         }
 
     ]
@@ -37,12 +44,12 @@ export const Projects = () => {
                 <div className="pb-12 text-center">
                     <h3 className="text-4xl font-bold mb-4 ">Here are some of my school projects</h3>
                 </div>
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
 
                     {projects.map(({id, src, link, title, description}) => (
                         <div key={id} className="bg-gray-900 rounded-lg overflow-hidden flex flex-col">
                             <img src={src} alt="exam" className="w-full h-full max-h-64 object-cover object-center aspect-w-1 aspect-h-1"/>
-                            <div className="p-4 h-40 flex-grow">
+                            <div className="p-4 h-28 flex-grow">
                                 <h4 className="text-xl font-semi-bold mb-2">{title}</h4>
                                 <p className="text-gray-400">{description}</p>
                             </div>
