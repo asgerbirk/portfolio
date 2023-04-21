@@ -33,7 +33,7 @@ export const Projects = () => {
             src: "",
             link: "https://github.com/asgerbirk/fullstack/tree/master/server",
             title: "Login - UNDER DEVELOPMENT",
-            description: "Fullstack application with a authentication(bcrypt), authorization(JWT). It is an exam project that i am working on, so it is not done yet."
+            description: "Fullstack application with a authentication(bcrypt), authorization(JWT). It is an exam project that i am working on, so it is not done yet. I am almost done with the backend, but i have not decided what web-framework to use yet"
         }
 
     ]
