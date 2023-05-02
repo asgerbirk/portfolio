@@ -40,17 +40,16 @@ export const Projects = () => {
 
     ]
 
-    return(
-        <div name="projects" className=" relative h-screen bg-gradient-to-b from-zinc-700 to-gray-800 text-white md:h-screen overflow-y-scroll">
-            <div>
+    return (
+        <div name="projects" className="relative bg-gradient-to-b from-zinc-700 to-gray-800 text-white overflow-y-auto max-h-screen pb-16 md:pb-0">
+            <div className="container mx-auto">
                 <div className="pb-12 text-center">
-                    <h3 className="text-4xl font-bold mb-4 ">Projects</h3>
+                    <h3 className="text-4xl font-bold mb-4">Projects</h3>
                 </div>
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-2">
-
-                    {projects.map(({id, src, link, title, description}) => (
+                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+                    {projects.map(({ id, src, link, title, description }) => (
                         <div key={id} className="bg-gray-900 rounded-lg overflow-hidden flex flex-col">
-                            <img src={src} alt={title} className="w-full object-cover object-center"  />
+                            <img src={src} alt={title} className="h-56 object-contain mx-auto" />
                             <div className="p-4">
                                 <h4 className="text-lg font-semibold mb-2">{title}</h4>
                                 <p className="text-sm text-gray-400">{description}</p>
@@ -59,10 +58,9 @@ export const Projects = () => {
                                 <a href={link} target="_blank" rel="noopener noreferrer" className="bg-zinc-500 hover:bg-zinc-600 text-white px-4 py-2 rounded">Code</a>
                             </div>
                         </div>
-                    )) }
+                    ))}
                 </div>
-
             </div>
         </div>
-    )
+    );
 }
