@@ -35,7 +35,7 @@ export const Projects = () => {
             link: "https://github.com/asgerbirk/fullstack",
             title: "Login - UNDER DEVELOPMENT",
             description: "Fullstack application with Express, MongoDB, JWT, Tailwind and  Svelte. " +
-                "Right now there is only implemented a login system - and i am working on some content."
+                "Right now there is only implemented a login system - i am working on some content."
         }
 
     ]
