@@ -13,8 +13,8 @@ return(
                     Studying Computer Science at KEA
                 </h3>
                 <p className="max-w-md mx-auto mt-2">
-                    I am 24 years old living in Nørrebro in Copenhagen. In my spare time i like to hang out with my friends, family and girlfriend.
-                    I also like to be active, and i like all kind of sports and especially football. These days i play a lot of padel tennis and go to the gym.
+                    I am 24 years old living in Nørrebro in Copenhagen and searching for an unpaid internship for 10 weeks. In my spare time i like to hang out with my friends, family and girlfriend.
+                    I am a competitive person and i like all kind of sports and especially football. These days i play a lot of padel tennis and go to the gym.
                     In addition i enjoy playing computer games and chess.
                 </p>
             </div>
