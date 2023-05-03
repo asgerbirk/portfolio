@@ -24,22 +24,19 @@ export const Navbar = () => {
     ]
 
     return (
-       <div className=" flex w-full h-20 px-4 bg-gray-600 flex items-center justify-between text-white fixed">
-           <div>
-               <h1 className="text-4xl  ">Asger Birk</h1>
-           </div>
+        <div className="flex w-full h-20 px-4 bg-blue-500 items-center justify-between text-white fixed">
+            <div>
+                <h1 className="text-4xl">Asger Birk</h1>
+            </div>
 
-
-           <ul className="flex">
-               {links.map(({id, link}) => (
-                   <li key={id}
-                       className="px-4 text-white-500 text-2xl hover:scale-125 duration-200 capitalize">
-                     <Link to={link} smooth duration={500}>{link}</Link>
-                   </li>
-               ))}
-           </ul>
-
-       </div>
+            <ul className="flex">
+                {links.map(({id, link}) => (
+                    <li key={id} className="px-4 text-white text-2xl hover:scale-125 duration-200 capitalize">
+                        <Link to={link} smooth duration={500}>{link}</Link>
+                    </li>
+                ))}
+            </ul>
+        </div>
     );
 
 
