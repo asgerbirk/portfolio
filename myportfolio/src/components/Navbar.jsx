@@ -24,7 +24,7 @@ export const Navbar = () => {
     ]
 
     return (
-        <div className="flex w-full h-20 px-4 bg-blue-500 items-center justify-between text-white fixed">
+        <div className="flex w-full h-20 px-4 bg-gray-800 items-center justify-between text-white fixed">
             <div>
                 <h1 className="text-4xl">Asger Birk</h1>
             </div>

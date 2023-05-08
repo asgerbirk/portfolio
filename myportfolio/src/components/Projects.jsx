@@ -27,7 +27,7 @@ export const Projects = () => {
             src: app,
             link: "https://github.com/asgerbirk/mandatoryMobile",
             title: "Wine App",
-            description: "This is a simple CRUD Wine App where you can see the all the wines and all the recent wines in 7 days. I have used React-Native and Firestore Database"
+            description: "This is a simple CRUD Wine App where you can see the all the wines and all the recent wines in 7 days. I have used React-Native for the front-end and Firebase store as backend"
         },
         {
             id: 4,
