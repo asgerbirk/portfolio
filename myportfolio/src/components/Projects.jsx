@@ -32,10 +32,10 @@ export const Projects = () => {
         {
             id: 4,
             src: fullstack,
-            link: "https://github.com/asgerbirk/fullstack",
-            title: "Login - UNDER DEVELOPMENT",
+            link: "https://github.com/asgerbirk/ZandoCommerceClient",
+            title: "E-Commerce",
             description: "Fullstack application with Express, MongoDB, JWT, Tailwind and  Svelte. " +
-                "Right now there is only implemented a login system - i am working on some content."
+                "Simple E-Commerce where you can sell things and buy things with Stripe. There is a login system with JWT Tokens. I save the pictures in a S3-AWS-Bucket"
         }
 
     ]
