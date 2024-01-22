@@ -41,16 +41,16 @@ export const Projects = () => {
     ]
 
     return (
-        <div name="projects" className=" bg-gradient-to-b from-zinc-700 to-gray-800 text-white max-h-screen pb-16 md:pb-0 ">
-            <div className="container mx-auto">
+        <div name="projects" className="bg-gradient-to-b from-zinc-700 to-gray-800 text-white h-screen w-full overflow-auto">
+            <div className="container mx-auto h-full flex flex-col">
                 <div className="pb-12 text-center">
                     <h3 className="text-4xl font-bold mb-4">Projects</h3>
                 </div>
-                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-2">
+                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-2 flex-grow">
                     {projects.map(({ id, src, link, title, description }) => (
                         <div key={id} className="bg-gray-900 rounded-lg overflow-hidden flex flex-col">
-                            <img src={src} alt={title} className="h-40 object-contain mx-auto" />
-                            <div className="p-2">
+                            <img src={src} alt={title} className="h-40 w-full object-contain mx-auto" />
+                            <div className="p-2 flex-grow">
                                 <h4 className="text-lg font-semibold mb-2">{title}</h4>
                                 <p className="text-sm text-gray-400">{description}</p>
                             </div>
@@ -63,4 +63,5 @@ export const Projects = () => {
             </div>
         </div>
     );
+
 }
