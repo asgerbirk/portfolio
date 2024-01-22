@@ -61,7 +61,7 @@ export const Competences = () => {
     return<div>
         <div name="competences" className="h-screen w-full bg-gradient-to-b from-zinc-700 to-gray-800 text-white">
             <div className="pb-12 text-center">
-                <h1 className= "text-4xl font-bold mb-4" >Competences</h1>
+                <h1 className= "text-4xl font-bold mb-4" >Skills</h1>
             </div>
 
             <div className="w-full grid grid-cols-2 sm:grid-cols-3 text-center py-4 gap-6">

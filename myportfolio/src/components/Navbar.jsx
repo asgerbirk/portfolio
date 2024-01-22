@@ -15,7 +15,7 @@ export const Navbar = () => {
         },
         {
             id: 3,
-            link: "competences"
+            link: "skills"
         },
         {
             id: 4,
