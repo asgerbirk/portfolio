@@ -50,7 +50,7 @@ export const Projects = () => {
                     {projects.map(({ id, src, link, title, description }) => (
                         <div key={id} className="bg-gray-900 rounded-lg overflow-hidden flex flex-col">
                             <img src={src} alt={title} className="h-40 w-full object-contain mx-auto" />
-                            <div className="p-2 flex-grow">
+                            <div className="p-2">
                                 <h4 className="text-lg font-semibold mb-2">{title}</h4>
                                 <p className="text-sm text-gray-400">{description}</p>
                             </div>
@@ -60,8 +60,10 @@ export const Projects = () => {
                         </div>
                     ))}
                 </div>
+                <div className="flex-grow"></div> {/* This div pushes content to the top */}
             </div>
         </div>
     );
+
 
 }
