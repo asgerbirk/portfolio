@@ -20,11 +20,6 @@ export const Contact = () => {
             id: 2,
             src: linkin,
             link: "https://www.linkedin.com/in/asger-birk-96741a234/"
-        },
-        {
-            id: 3,
-            src: facebook,
-            link: "https://www.facebook.com/asger.birk/"
         }
     ]
 
