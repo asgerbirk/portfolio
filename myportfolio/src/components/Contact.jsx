@@ -24,7 +24,7 @@ export const Contact = () => {
     ]
 
     return (
-        <div name="contact" className="h-screen bg-gradient-to-b from-zinc-700 to-gray-800 text-white md:h-screen">
+        <div name="contact" className="h-screen bg-gradient-to-b from-zinc-700 to-gray-800 text-white flex flex-col justify-center">
             <div className="text-center pb-12">
                 <h1 className="text-4xl font-bold mb-4">Contact</h1>
             </div>
@@ -39,14 +39,14 @@ export const Contact = () => {
                 </p>
                 <p className="mb-8">+45 29892575</p>
             </div>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-16 ">
-                {contact.map(({id, src, link}) => (
-                    <div key={id} className="rounded-lg overflow-hidden">
-                        <a href={link} target="_blank" rel="noopener noreferrer">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-16 place-items-center">
+                {contact.map(({ id, src, link }) => (
+                    <div key={id} className="flex justify-center items-center">
+                        <a href={link} target="_blank" rel="noopener noreferrer" className="block w-32 h-32">
                             <img
                                 src={src}
                                 alt="contact"
-                                style={{ width: '100%', maxWidth: '250px', height: 'auto' }} // Inline styles for image size
+                                className="max-w-full max-h-full object-contain"
                             />
                         </a>
                     </div>
@@ -54,5 +54,6 @@ export const Contact = () => {
             </div>
         </div>
     );
+
 
 }
