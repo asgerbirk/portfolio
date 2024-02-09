@@ -21,9 +21,9 @@ export const Contact = () => {
                 >
                     Asger.birk@gmail.com
                 </p>
-                <p className="text-3xl">+45 29892575</p>
+                <p className="text-3xl mb-4">+45 29892575</p>
             </div>
-            <div className="flex justify-center gap-10 pb-8">
+            <div className="flex justify-center gap-10 pb-4">
                 <a href="https://github.com/asgerbirk" target="_blank" rel="noopener noreferrer" className="text-4xl text-white">
                     <FontAwesomeIcon icon={faGithub} />
                 </a>
@@ -34,4 +34,5 @@ export const Contact = () => {
         </div>
     );
 };
+
 
