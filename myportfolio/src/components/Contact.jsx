@@ -23,36 +23,36 @@ export const Contact = () => {
         }
     ]
 
-    return<div name="contact" className="h-screen bg-gradient-to-b from-zinc-700 to-gray-800 text-white md:h-screen">
-        <div className="text-center pb-12">
-            <h1 className="text-4xl font-bold mb-4">Contact</h1>
+    return (
+        <div name="contact" className="h-screen bg-gradient-to-b from-zinc-700 to-gray-800 text-white md:h-screen">
+            <div className="text-center pb-12">
+                <h1 className="text-4xl font-bold mb-4">Contact</h1>
+            </div>
+            <div className="text-white text-center text-3xl mt-4">
+                <p className="mb-8">Asger Birk</p>
+                <p
+                    title="Copy Email"
+                    onClick={handleCopyEmail}
+                    className="mb-8 cursor-pointer hover:underline"
+                >
+                    Asger.birk@gmail.com
+                </p>
+                <p className="mb-8">+45 29892575</p>
+            </div>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-16 ">
+                {contact.map(({id, src, link}) => (
+                    <div key={id} className="rounded-lg overflow-hidden">
+                        <a href={link} target="_blank" rel="noopener noreferrer">
+                            <img
+                                src={src}
+                                alt="contact"
+                                style={{ width: '100%', maxWidth: '250px', height: 'auto' }} // Inline styles for image size
+                            />
+                        </a>
+                    </div>
+                ))}
+            </div>
         </div>
-        <div className="text-white text-center text-3xl mt-4">
-            <p className="mb-8">Asger Birk</p>
+    );
 
-            <p
-                title="Copy Email"
-                onClick={handleCopyEmail}
-                className="mb-8 cursor-pointer hover:underline"
-            >
-                Asger.birk@gmail.com</p>
-
-            <p className="mb-8">+45 29892575</p>
-        </div>
-
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-16 ">
-            {contact.map(({id, src, link}) => (
-                <div key={id} className="rounded-lg overflow-hidden" style={{height: "400px"}}>
-                    <a href={link} target="_blank" rel="noopener noreferrer">
-                        <img
-                            src={src}
-                            alt="contact"
-                            className="w-full h-full object-cover"
-                        />
-                    </a>
-                </div>
-            ))}
-
-        </div>
-    </div>
 }
