@@ -7,6 +7,29 @@ export const Projects = () => {
 
     const projects = [
         {
+            id: 1,
+            src: exam,
+            link: "https://github.com/asgerbirk/examfrontend",
+            title: "Exam 3. Semester",
+            description: "In this exam we had 24 hours to build the project. " +
+                "The project is build with Java Spring-Boot as backend and React.js as frontend. It is a simple CRUD delivery project with some database relationships"
+        },
+        {
+            id: 2,
+            src: mandatory,
+            link: "https://github.com/asgerbirk/expressExercise/tree/master/mandatory_01",
+            title: "Project in Full stack with Node.js",
+            description: "This project is a website that contains code snippets and documentation from what i have learned in the course." +
+                "All the Pages are served with Express and the application is using SSR(Server-side-rendering)"
+        },
+        {
+            id: 3,
+            src: app,
+            link: "https://github.com/asgerbirk/mandatoryMobile",
+            title: "Wine App",
+            description: "This is a simple CRUD Wine App where you can see the all the wines and all the recent wines in 7 days. I have used React-Native for the front-end and Firebase store as backend"
+        },
+        {
             id: 4,
             src: fullstack,
             link: "https://github.com/asgerbirk/ZandoBackend",
