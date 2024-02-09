@@ -32,7 +32,7 @@ export const Projects = () => {
         {
             id: 4,
             src: fullstack,
-            link: "https://github.com/asgerbirk/fullstack",
+            link: "https://github.com/asgerbirk/ZandoBackend",
             title: "E-Commerce",
             description: "Fullstack application with Express, MongoDB, JWT, Tailwind and  Svelte. " +
                 "Simple E-Commerce where you can sell things and buy things with Stripe. There is a login system with JWT Tokens. I save the pictures in a S3-AWS-Bucket"
